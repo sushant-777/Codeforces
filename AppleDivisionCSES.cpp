@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void divide(vector<long long>& arr, long long g1, long long g2, long long &ans, long long idx) {
+void divide(vector<long long>& arr, long long g1, long long g2, long long &ans, size_t idx) {
     if (idx == arr.size()) {
         ans = min(ans, abs(g1 - g2));
         return;
