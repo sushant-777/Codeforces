@@ -4,13 +4,13 @@ using namespace std;
 bool is_possible(map<char,int>& mp , char ch){
     
     char mode = ch ;
-    int total_left = 0 ;
+    int total_left_to_fill = 0 ;
     for(auto it : mp){
         mode = it.first ;
-        total_left += it.second ;
+        total_left_to_fill += it.second ;
     }
 
-    return (mp[mode] <= (total_left + 1)/2) && (mp[ch] <= (total_left )/2) ;
+    return (mp[mode] <= (total_left_to_fill + 1)/2) && (mp[ch] <= (total_left_to_fill )/2) ;
 
 }
 
