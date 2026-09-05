@@ -23,8 +23,8 @@ while(i<=j){
     }
 }
 return ans.size() ;
-}
 
+}
 int main(){
     int n , x;
     cin >> n >> x ;
